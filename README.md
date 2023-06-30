@@ -11,7 +11,7 @@ Proyecto realizado en Laravel 10
 
 ## Environment Variables
 
-Para ejecutar el proyecto laravel es importante colocar esta variable de entontorno con la url donde se encuenta alojada la api
+Para ejecutar el proyecto laravel es importante colocar esta variable de entorno con la url donde se encuenta alojada la api
 
 `APP_URL_DIR_IMAGES=http://127.0.0.1:8000`
 
