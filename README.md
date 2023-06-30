@@ -17,7 +17,7 @@ Para ejecutar el proyecto laravel es importante colocar esta variable de entonto
 
  
 
-En el proyecto Vuejs, hay que editar la url pero directamente en el servivio de la api que hace uso de axion, src/core/services/ApiService.ts y cambiar la variable:
+En el proyecto Vuejs, hay que editar la url pero directamente en el servivio de la api que hace uso de axios, src/core/services/ApiService.ts y cambiar la variable:
 
 `const  URL_BASE = `"http://127.0.0.1:8000";
 ## Ejecutar el proyecto
