@@ -28,7 +28,7 @@ class CheckDefectors extends Command
         
         $current_date  = date("Y-m-d H:i:s");
         $previous_date = date("Y-m-d H:i:s", strtotime($current_date."- 1 month"));
-        $data          = User::whereBetween('session_date', [$previous_date, $current_date])->get('email')->chunk(100);
+        $data          = User::where('session_date', '>=', $previous_date)->get('email')->chunk(100);
         $delay = now()->addMinutes(1);
         foreach ($data as $key => $value) {
             Mail::to(value[$key]->email)->later($delay, new SendEmailReminder());
